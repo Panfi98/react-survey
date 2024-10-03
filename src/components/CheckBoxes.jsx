@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function CheckBox1({ handleClick }) {
+export default function CheckBox1({ handleChange }) {
 
 
     return (
@@ -11,7 +11,7 @@ export default function CheckBox1({ handleClick }) {
                         name="spend-time"
                         type="checkbox"
                         value="swimming"
-                        onClick={() => handleClick('swimming')} />
+                        onChange={handleChange} />
                     Swimming
                 </label>
             </li>
@@ -21,7 +21,7 @@ export default function CheckBox1({ handleClick }) {
                         name="spend-time" 
                         type="checkbox" 
                         value="bathing"
-                        onClick={() => handleClick('bathing')} />
+                        onChange={handleChange} />
                     Bathing
                 </label>
             </li>
@@ -31,7 +31,7 @@ export default function CheckBox1({ handleClick }) {
                         name="spend-time" 
                         type="checkbox" 
                         value="chatting"
-                        onClick={() => handleClick('chatting')} />
+                        onChange={ handleChange} />
                     Chatting
                 </label>
             </li>
@@ -41,7 +41,7 @@ export default function CheckBox1({ handleClick }) {
                         name="spend-time" 
                         type="checkbox" 
                         value="noTime"
-                        onClick={() => handleClick('noTime')} />
+                        onChange={handleChange} />
                     No Time
                 </label>
             </li>
